@@ -1,4 +1,4 @@
-with open("file.tcv", "r") as file:
+with open("file.tsv", "r") as file:
     lines = file.readlines()
 
 print(lines[:5])
