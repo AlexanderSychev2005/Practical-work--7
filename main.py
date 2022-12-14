@@ -1,5 +1,5 @@
 import sys
-
+import medals
 
 def total():
     year = sys.argv[3]
@@ -7,11 +7,6 @@ def total():
         line = line.split("\t")
         if year == line[9]:
             print(line)
-
-
-def medals():
-    country = sys.argv[3]
-
 
 data_file = sys.argv[1]
 with open("data_file.tsv", 'r') as file:
@@ -23,5 +18,5 @@ mode = sys.argv[2]  # medals or total
 
 if mode == "-total":
     total()
-else:
-    medals()
+elif mode == "-medals":
+    medals.medals()
