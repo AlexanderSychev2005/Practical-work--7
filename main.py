@@ -1,6 +1,7 @@
 import sys
 import medals
 
+
 def total():
     year = sys.argv[3]
     for line in lines:
@@ -20,3 +21,5 @@ if mode == "-total":
     total()
 elif mode == "-medals":
     medals.medals()
+
+
