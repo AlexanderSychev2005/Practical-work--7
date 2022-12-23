@@ -4,7 +4,7 @@ import total
 import overall
 
 data_file = sys.argv[1]
-with open("data_file.tsv", 'r') as file:
+with open("data-file.tsv", 'r') as file:
     lines = file.readlines()
     next_line = file.readlines()
 
@@ -17,4 +17,6 @@ elif mode == "-medals":
     medals.medals()
 elif mode == "-overall":
     overall.overall()
+elif mode == "-interactive":
+
 
