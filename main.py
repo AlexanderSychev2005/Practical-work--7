@@ -1,4 +1,5 @@
 import sys
+import interactive
 import medals
 import total
 import overall
@@ -18,5 +19,6 @@ elif mode == "-medals":
 elif mode == "-overall":
     overall.overall()
 elif mode == "-interactive":
+    interactive.interactive()
 
 
